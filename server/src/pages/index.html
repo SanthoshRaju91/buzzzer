@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Socket Buzzer!!</title>
+    <script src="./vendor/socket/socket.io.js"></script>
+    <script>
+      var socket = io();
+
+      socket.on('buzz-channel-1', function(msg) {
+          console.log("Message for buzz-channel-1", msg);
+      })
+
+      socket.on('buzz-channel-2', function(msg) {
+          console.log("Message for buzz-channel-2", msg);
+      })
+
+      socket.on('buzz-channel-3', function(msg) {
+          console.log("Message for buzz-channel-3", msg);
+      })
+
+
+    </script>
+  </head>
+  <body>
+    <h1>Hello World!!</h1>
+  </body>
+</html>
